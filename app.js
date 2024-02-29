@@ -65,18 +65,33 @@
 // }
 // console.log(newArr)
 
-const newArr = []
-const l = [1,2,3,'WDF']
-function filter_list(l) {
-  // Return a new array with the strings filtered out
-  for (var i = 0;i<l.length; i++ ){
-    if(typeof(l[i])==='number'){
-      newArr.push(l[i])
-    }else{
-      console.log('not string')
-    }
-  }
-  return newArr;
-}
-filter_list(l)
+// const newArr = []
+// const l = [1,2,3,'WDF']
+// function filter_list(l) {
+//   // Return a new array with the strings filtered out
+//   for (var i = 0;i<l.length; i++ ){
+//     if(typeof(l[i])==='number'){
+//       newArr.push(l[i])
+//     }else{
+//       console.log('not string')
+//     }
+//   }
+//   return newArr;
+// }
+// filter_list(l)
 
+
+const num1 = 132189 
+
+const digitalChange = (num1) =>{
+  let str = num1.toString()
+  let num2 = 0
+  const splitStr =str.split('')
+  for (var i =0 ; i< splitStr.length;i++){
+   num2 =num2 + parseInt(splitStr[i])
+
+  }
+  console.log(num2)
+}
+
+digitalChange(num1)
