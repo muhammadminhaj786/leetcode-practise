@@ -197,3 +197,16 @@
 // console.log(countFunc(10))
 
 
+const numPalindrome = (x)=>{
+    var x = String(x)
+    for (var i =0; i< x.length/2;i++){
+        if(x[i]==x[x.length-1]){
+            return 'palindrome'
+        }else{
+            return 'not a palindrome'
+        }
+    }
+}
+
+console.log(numPalindrome(10))
+
