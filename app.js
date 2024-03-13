@@ -199,14 +199,13 @@
 
 const numPalindrome = (x)=>{
     var x = String(x)
-    for (var i =0; i< x.length/2;i++){
-        if(x[i]==x[x.length-1]){
-            return 'palindrome'
-        }else{
+    for (var i =0; i< x.length;i++){
+        if(x[i]!==x[x.length-1-i]){
             return 'not a palindrome'
         }
     }
+    return 'palindrome'
 }
 
-console.log(numPalindrome(10))
+console.log(numPalindrome(100021))
 
