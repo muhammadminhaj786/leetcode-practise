@@ -1,6 +1,5 @@
 // // console.log("hello ")
 
-
 // // function xyz(){
 // //     console.log(a)
 // // }
@@ -80,8 +79,7 @@
 // // }
 // // filter_list(l)
 
-
-// // const num1 = 132189 
+// // const num1 = 132189
 
 // // const digitalChange = (num1) =>{
 // //   let str = num1.toString()
@@ -126,14 +124,12 @@
 // //  for(var i=0;i<s.length;i++){
 // //   newStr += s[i]
 // //   if(s[i]=='-'){
-  
+
 // //   }
 // //  }
-// //  console.log(newStr)   
+// //  console.log(newStr)
 // // }
 // // toCamel(s)
-
-
 
 // // function dummy(){
 
@@ -159,30 +155,45 @@
 
 // // xyz()
 
-
-
 // let arr= [1,2,4,5]
 // let arr2 = [5,6,7]
 // arr[1]=0
 // console.log(arr)
-
 
 // Given an array nums of size n, return the majority element.
 // The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
 // Input: nums = [3,2,3]
 // Output: 3
 
-const majorityFind = (arr)=>{
-  let count = 0
-  let repeatNum = null
-  for (let num of arr){
-    console.log(num)
-    if(count == 0){
-      repeatNum = num
-    }
-    count += (num == repeatNum) ? 1 : -1
-  }
-  return repeatNum
-}
+// const majorityFind = (arr)=>{
+//   let count = 0
+//   let repeatNum = null
+//   for (let num of arr){
+//     console.log(num)
+//     if(count == 0){
+//       repeatNum = num
+//     }
+//     count += (num == repeatNum) ? 1 : -1
+//   }
+//   return repeatNum
+// }
 
-console.log(majorityFind([1,2,3,2]))
+// console.log(majorityFind([1,2,3,2]))
+
+// Input:
+// n = 10
+// ["call","call","call"]
+// Output: [10,11,12]
+
+// var arr = ["call", "call", "call"];
+// const countFunc = (n) => {
+// var temp =[]
+//   for (var i = 0; i < arr.length; i++) {
+//     temp.push(n+i)
+//   }
+//   return temp
+// };
+
+// console.log(countFunc(10))
+
+
