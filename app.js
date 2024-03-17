@@ -196,16 +196,56 @@
 
 // console.log(countFunc(10))
 
+//number palindrome
+// const numPalindrome = (x)=>{
+//     var x = String(x)
+//     for (var i =0; i< x.length;i++){
+//         if(x[i]!==x[x.length-1-i]){
+//             return 'not a palindrome'
+//         }
+//     }
+//     return 'palindrome'
+// }
 
-const numPalindrome = (x)=>{
-    var x = String(x)
-    for (var i =0; i< x.length;i++){
-        if(x[i]!==x[x.length-1-i]){
-            return 'not a palindrome'
-        }
-    }
-    return 'palindrome'
+// console.log(numPalindrome(100021))
+
+//hoisting in js
+// x = 23; 
+// var x; 
+// console.log(x)
+
+// //hoisting in let const
+// // let or const me bhi hoisting hoti he but farq ye he k temporal dead zone banjata.
+// y = 5;
+// let y;
+// console.log(y)
+
+//arrow function me hoisting nhi hoti
+// console.log(myFunc()); // TypeError: myFunc is not a function
+// var myFunc = () => {
+//   return "Hello!";
+// };
+
+const obj = {
+    name: 'minhaj',
+    age: 10,
+    job: 'dev'
 }
 
-console.log(numPalindrome(100021))
+const arr = [1,2,3,4,5]
 
+const {name,age,job}=obj
+const [first, ...rest] = arr
+console.log(first, rest)
+
+const arr2= [1,2,3,4]
+const result = arr2.map((num)=>num*2)
+console.log(result)
+const arr3 = arr2.sort()
+console.log(arr3)
+
+let x =5
+if(true){
+    let x=10
+}
+console.log(x)
