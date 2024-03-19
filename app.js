@@ -226,26 +226,45 @@
 //   return "Hello!";
 // };
 
-const obj = {
-    name: 'minhaj',
-    age: 10,
-    job: 'dev'
-}
+// const obj = {
+//     name: 'minhaj',
+//     age: 10,
+//     job: 'dev'
+// }
 
-const arr = [1,2,3,4,5]
+// const arr = [1,2,3,4,5]
 
-const {name,age,job}=obj
-const [first, ...rest] = arr
-console.log(first, rest)
+// const {name,age,job}=obj
+// const [first, ...rest] = arr
+// console.log(first, rest)
 
-const arr2= [1,2,3,4]
-const result = arr2.map((num)=>num*2)
-console.log(result)
-const arr3 = arr2.sort()
-console.log(arr3)
+// const arr2= [1,2,3,4]
+// const result = arr2.map((num)=>num*2)
+// console.log(result)
+// const arr3 = arr2.sort()
+// console.log(arr3)
 
-let x =5
-if(true){
-    let x=10
-}
-console.log(x)
+// let x =5
+// if(true){
+//     let x=10
+// }
+// console.log(x)
+
+// const lenOfLast = (s)=>{
+//     let count = 0
+//     let word = s.trim().split(" ")
+//     for (var i =0;i<word[word.length-1].length;i++){
+//         count++
+//     }
+//     return count
+// }
+
+// console.log(lenOfLast('hello world  '))
+
+// const init = 5
+// let calls = ['increment, decrement', 'reset']
+// const counterII = (init, calls)=>{
+//    increment:
+// }
+
+// console.log(counterII(5, ['increment', 'decrement', 'reset']))
